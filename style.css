@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Lao+Looped:wght@100..900&family=Rubik+Doodle+Triangles&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Edu+NSW+ACT+Foundation:wght@400..700&family=Varela+Round&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Flex", sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#page1 {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(136, 127, 127);
+    position: relative;
+}
+
+#page1 video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+#cursor {
+    height: 7.5vw;
+    width: 7.5vw;
+    background-color: #FF5F38;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%, -50%);
+}
+
+#cursor h5 {
+    font-size: 1.15vw;
+    font-weight: 500;
+}
+
+#page1-content {
+    height: 100%;
+    width: 100%;
+    /* background-color: black; */
+    position: relative;
+    z-index: 10;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 5vw;
+
+}
+
+nav {
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+    /* background-color: red; */
+    padding: 3vw 3vw;
+}
+
+nav h3 {
+    font-size: 1.4vw;
+    font-weight: 300;
+}
+
+nav h4 {
+    font-size: 1.4vw;
+    font-weight: 100;
+}
+
+#page1-content h1 {
+    font-size: 18vw;
+    font-weight: 100;
+    line-height: 27vw;
+    font-family: "Noto Sans Lao Looped", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+
+
+}
+
+#page1-content h1 span {
+    display: inline-block;
+    font-family: "Noto Sans Lao Looped", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+
+
+
+}
+
+#page2 {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(248, 248, 244);
+    position: relative;
+    padding: 5vw 2.8vw;
+}
+
+#page2-top {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-bottom: 1.2vw;
+    margin-bottom: 1vw;
+    border-bottom: 1px solid black;
+}
+
+#main #page2 h3 {
+    margin-top: 4vw;
+    font-size: 3vw;
+    font-weight: 600;
+    width: 100%;
+    line-height: 9vh;
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal
+}
+
+#page3 {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    padding: 3vw;
+    background-color: rgb(248, 248, 243);
+}
+
+#page3-top {
+    /*background-color: #b12a08;*/
+    text-align: center;
+}
+
+#page3-top h4 {
+    margin-bottom: 1vw;
+    font-size: 1vw;
+    font-weight: 500;
+}
+
+#page3-top h4 span {
+    font-size: 0.7vw;
+    background-color: black;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 10px;
+
+
+}
+
+#page3-top h2 {
+    font-size: 4vw;
+    font-weight: 500;
+}
+
+#page3-elements {
+    height: 75vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(248, 248, 243);
+    margin-top: 8vw;
+
+
+}
+
+#page3-elements .box {
+    height: 90%;
+    width: 32.5%;
+    /* background-color: black;*/
+    position: relative;
+}
+
+#page3-elements .box video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#page3-elements .box img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: ease-in 1s;
+
+}
+
+#page3-elements .box:hover img {
+    opacity: 0;
+}
+
+#page4 {
+    height: 100vh;
+    width: 100%;
+    padding: 4vw 0;
+    position: relative;
+}
+
+#page4 h1 {
+    font-size: 10vw;
+    font-family: sans-serif;
+    font-weight: 100;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    margin-top: 10vw;
+}
+
+#swiperdiv {
+    height: 60vh;
+    width: 100%;
+    /* background-color: red;*/
+    position: relative;
+    margin-top: -1%;
+}
+
+.swiper {
+    width: 120%;
+    height: 100%;
+}
+
+.swiper-slide {
+
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 18%;
+    object-fit: cover;
+}
+
+.swiper {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#loader {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: black;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    gap: 15px;
+}
+
+#loader h3 {
+    font-size: 2vw;
+    font-weight: 100;
+}
+
+@media screen and (max-width: 768px) {
+    /* Adjust styles for smaller screens */
+    #cursor {
+        height: 5vw;
+        width: 5vw;
+    }
+
+    nav h3,
+    nav h4 {
+        font-size: 4vw;
+    }
+
+    #page1-content h1 {
+        font-size: 12vw;
+        line-height: 18vw;
+    }
+
+    /* Adjust other styles as needed for smaller screens */
+}
+
+@media screen and (max-width: 480px) {
+    /* Adjust styles for even smaller screens */
+    #cursor {
+        height: 3vw;
+        width: 3vw;
+    }
+
+    nav h3,
+    nav h4 {
+        font-size: 3.5vw;
+    }
+
+    #page1-content h1 {
+        font-size: 8vw;
+        line-height: 12vw;
+    }
+
+    /* Adjust other styles as needed for smaller screens */
+}
